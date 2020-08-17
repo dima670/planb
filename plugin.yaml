@@ -1,0 +1,11 @@
+plugin:
+    name: 'dmitrychuvakov.planb::lang.plugin.name'
+    description: 'dmitrychuvakov.planb::lang.plugin.description'
+    author: 'Dmitry Chuvakov'
+    icon: oc-icon-align-center
+    homepage: ''
+navigation:
+    planb-poll:
+        label: Голосование
+        url: dmitrychuvakov/planb/polls
+        icon: icon-area-chart

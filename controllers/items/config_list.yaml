@@ -1,0 +1,15 @@
+list: $/dmitrychuvakov/planb/models/pollitem/columns.yaml
+modelClass: DmitryChuvakov\Planb\Models\PollItem
+title: Варианты
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'dmitrychuvakov/planb/items/update/:id'
+defaultSort:
+    column: name
+    direction: asc

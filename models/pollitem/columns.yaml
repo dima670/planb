@@ -1,0 +1,22 @@
+columns:
+    name:
+        label: Имя
+        type: text
+    image:
+        label: Фотография
+        sortable: no
+        type: partial
+        path: ~/plugins/dmitrychuvakov/planb/models/pollitem/_backend_photo_column.htm
+    age:
+        label: Возраст
+        type: number
+    city:
+        label: Место проживания
+        type: text
+    children:
+        label: Детей
+        type: number
+    votes_count:
+        label: Голосов
+        relation: votes
+        useRelationCount: true

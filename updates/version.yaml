@@ -1,0 +1,23 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table dmitrychuvakov_planb_polls'
+    - builder_table_create_dmitrychuvakov_planb_polls.php
+1.0.3:
+    - 'Created table dmitrychuvakov_planb_poll_items'
+    - builder_table_create_dmitrychuvakov_planb_poll_items.php
+1.0.4:
+    - 'Created table dmitrychuvakov_planb_poll_votes'
+    - builder_table_create_dmitrychuvakov_planb_poll_votes.php
+1.0.5:
+    - 'Updated table dmitrychuvakov_planb_poll_items'
+    - builder_table_update_dmitrychuvakov_planb_poll_items.php
+1.0.6:
+    - 'Updated table dmitrychuvakov_planb_poll_votes'
+    - builder_table_update_dmitrychuvakov_planb_poll_votes.php
+1.0.7:
+    - 'Updated table dmitrychuvakov_planb_poll_items'
+    - builder_table_update_dmitrychuvakov_planb_poll_items_2.php
+1.0.8:
+    - 'Updated table dmitrychuvakov_planb_poll_votes'
+    - builder_table_update_dmitrychuvakov_planb_poll_votes_2.php

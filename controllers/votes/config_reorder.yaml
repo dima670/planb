@@ -1,0 +1,4 @@
+title: Votes
+modelClass: DmitryChuvakov\Planb\Models\Vote
+toolbar:
+    buttons: reorder_toolbar

@@ -1,0 +1,10 @@
+name: Polls
+form: $/dmitrychuvakov/planb/models/poll/fields.yaml
+modelClass: DmitryChuvakov\Planb\Models\Poll
+defaultRedirect: dmitrychuvakov/planb/polls
+create:
+    redirect: 'dmitrychuvakov/planb/polls/update/:id'
+    redirectClose: dmitrychuvakov/planb/polls
+update:
+    redirect: dmitrychuvakov/planb/polls
+    redirectClose: dmitrychuvakov/planb/polls

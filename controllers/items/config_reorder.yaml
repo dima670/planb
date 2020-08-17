@@ -1,0 +1,4 @@
+title: Items
+modelClass: DmitryChuvakov\Planb\Models\PollItem
+toolbar:
+    buttons: reorder_toolbar

@@ -1,0 +1,102 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <div class="poll-title">Конкурс красоты Миссис Россия 2020</div>
+            <div class="poll-subtitle">Номинация: «Миссис Челябинская область 2020»</div>
+        </div>
+    </div>
+{% for poll in planb.polls %}
+    <div class="row justify-content-center">
+    {% for item in poll.items %}
+        {% if loop.index0 in [0,2] %}
+            <div class="col-md-4 mb-4 full-item">
+        {% elseif loop.index0 == 1 %}
+            <div class="col-md-auto mb-4 full-item">
+        {% else %}
+            <div class="col-md-auto mb-4 full-item">
+        {% endif %}
+            <div class="item-id" style="display: none;">{{ item.id }}</div>
+            <div class="item-about mx-auto">
+                <div class="item-photo">
+                    <img src="{{ item.photo.path }}" width="100%"/>
+                </div>
+                <p class="mb-0 item-name"><strong>{{ item.name }}</strong></p>
+                {% set age = item.age %}
+
+                <p class="mb-0 poll-age">
+                    {% if age >= 5 and age <= 20 %}
+                        {{ age }} лет
+                    {% else %}
+                        {% set agemod = age % 10 %}
+                        {% if agemod == 1 %}
+                            {{ age }} год
+                        {% elseif agemod >= 2 and agemod <= 4 %}
+                            {{ age }} года
+                        {% else %}
+                            {{ age }} лет
+                        {% endif %}
+                    {% endif %}
+                </p>
+                <p class="mb-0">{{ item.city }}</p>
+                <button
+                        type="button"
+                        class="btn btn-light custom-button button-item">
+                    Голосовать
+                </button>
+            </div>
+            <div class="full" style="display: none;">
+                <div class="modal-header">
+                    <h5 class="modal-title full-title-name">{{ item.name }}</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top: -25px;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="full-item-id" style="display: none;">{{ item.id }}</div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="{{ item.photo.path }}" class="full-photo"/>
+                        </div>
+                        <div class="col-md-5 item-font" style="margin: 15px;">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="text-left"><strong>Место проживания:</strong> {{ item.city }}</p>
+                                    <p class="text-left"><strong>Возраст:</strong> {% if age >= 5 and age <= 20 %}
+                                        {{ age }} лет
+                                    {% else %}
+                                        {% set agemod = age % 10 %}
+                                        {% if agemod == 1 %}
+                                            {{ age }} год
+                                        {% elseif agemod >= 2 and agemod <= 4 %}
+                                            {{ age }} года
+                                        {% else %}
+                                            {{ age }} лет
+                                        {% endif %}
+                                        {% endif %}</p>
+                                    {% if item.children is not empty %}
+                                    <p class="text-left"><strong>Дети:</strong> {{ item.children }}</p>
+                                    {% endif %}
+                                    {% autoescape false %}
+                                    {{ item.about }}
+                                    {% endautoescape %}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <button
+                                            type="button"
+                                            class="btn btn-light custom-button button-full"
+                                    >
+                                        Голосовать
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+{% endfor %}
+</div>

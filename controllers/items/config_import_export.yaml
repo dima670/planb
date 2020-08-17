@@ -1,0 +1,15 @@
+export:
+  title: Экспорт
+  modelClass: Dmitrychuvakov\Planb\Models\PollItemExport
+#  list: $/dmitrychuvakov/planb/models/pollitem/columns.yaml
+  list:
+    columns:
+      name:
+        label: Имя
+        type: text
+      votes_count:
+        label: Голосов
+        relation: votes
+        useRelationCount: true
+#export:
+#  useList: true

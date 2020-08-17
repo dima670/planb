@@ -1,0 +1,8 @@
+items:
+  label: Вариант
+  manage:
+    form: $/dmitrychuvakov/planb/models/pollitem/fields.yaml
+    list: $/dmitrychuvakov/planb/models/pollitem/columns.yaml
+  view:
+    list: $/dmitrychuvakov/planb/models/pollitem/columns.yaml
+    toolbarButtons: create|delete

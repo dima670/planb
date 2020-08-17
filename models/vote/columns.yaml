@@ -1,0 +1,20 @@
+columns:
+    id:
+        label: ID
+        type: number
+    item_id:
+        label: Вариант
+        type: number
+    item_name:
+        label: Имя
+        relation: item
+        select: name
+    ip:
+        label: IP
+        type: text
+    resolution:
+        label: Разрешение
+        type: text
+    created_at:
+        label: Дата
+        type: text

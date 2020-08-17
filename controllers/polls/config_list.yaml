@@ -1,0 +1,12 @@
+list: $/dmitrychuvakov/planb/models/poll/columns.yaml
+modelClass: DmitryChuvakov\Planb\Models\Poll
+title: Голосование
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'dmitrychuvakov/planb/polls/update/:id'

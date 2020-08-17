@@ -1,0 +1,37 @@
+fields:
+    photo:
+        label: Фотография
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            offset:
+                - 0
+                - 0
+            quality: 90
+            sharpen: 0
+            interlace: false
+            extension: auto
+        span: auto
+        type: fileupload
+    name:
+        label: Имя
+        span: auto
+        type: text
+    age:
+        label: Возраст
+        span: auto
+        type: number
+    city:
+        label: Место проживания
+        span: auto
+        type: text
+    children:
+        label: 'Сколько детей'
+        span: auto
+        type: number
+    about:
+        label: Рассказ
+        size: large
+        span: full
+        type: richeditor

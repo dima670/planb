@@ -1,0 +1,20 @@
+fields:
+    title:
+        label: 'Название голосования'
+        span: auto
+        type: text
+    activated:
+        label: Активное
+        span: auto
+        default: 1
+        type: switch
+#    items:
+#        span: full
+#        path: ~/plugins/dmitrychuvakov/planb/controllers/polls/_items.htm
+#        context:
+#            - update
+#            - preview
+#        type: partial
+    items:
+        type: partial
+        path: ~/plugins/dmitrychuvakov/planb/controllers/polls/_items.htm

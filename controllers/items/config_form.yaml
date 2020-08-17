@@ -1,0 +1,10 @@
+name: Items
+form: $/dmitrychuvakov/planb/models/pollitem/fields.yaml
+modelClass: DmitryChuvakov\Planb\Models\PollItem
+defaultRedirect: dmitrychuvakov/planb/items
+create:
+    redirect: 'dmitrychuvakov/planb/items/update/:id'
+    redirectClose: dmitrychuvakov/planb/items
+update:
+    redirect: dmitrychuvakov/planb/items
+    redirectClose: dmitrychuvakov/planb/items
